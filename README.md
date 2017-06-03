@@ -1,3 +1,12 @@
+
+[![Latest Stable Version](https://poser.pugx.org/shamim/ultimate-sms-api/v/stable)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
+[![Total Downloads](https://poser.pugx.org/shamim/ultimate-sms-api/downloads)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
+[![Latest Unstable Version](https://poser.pugx.org/shamim/ultimate-sms-api/v/unstable)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
+[![License](https://poser.pugx.org/shamim/ultimate-sms-api/license)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
+[![Monthly Downloads](https://poser.pugx.org/shamim/ultimate-sms-api/d/monthly)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
+[![GitHub issues](https://img.shields.io/github/issues/akasham67/ultimate-sms-api.svg?style=flat-square)](https://github.com/akasham67/ultimate-sms-api/issues)
+[![GitHub stars](https://img.shields.io/github/stars/akasham67/ultimate-sms-api.svg?style=flat-square)](https://github.com/akasham67/ultimate-sms-api/stargazers)
+
 # Ultimate SMS API
 
 Ultimate SMS API is build for Ultimate SMS - Bulk SMS Application For Marketing
@@ -34,7 +43,7 @@ require_once 'src/Class_Ultimate_SMS_API.php';
 use UltimateSMS\UltimateSMSAPI;
 ```
 ### Step 2:
-set your API_KEY from https://mywebhost.com/ultimate-sms-api/info
+set your API_KEY from `https://mywebhost.com/ultimate-sms-api/info` (your application install url)
 ```php
 $api_key = 'YWRtaW46YWRtaW4ucGFzc3dvcmQ=';
 ```
@@ -51,7 +60,7 @@ $destination = '8801810000000';
 ```
 
 ### Step 5:
-Replace your Install URL like https://mywebhost.com/ultimate-sms/api with https://ultimatesms.coderpixel.com/demo/
+Replace your Install URL like `https://mywebhost.com/ultimate-sms/api` with `https://ultimatesms.coderpixel.com/demo/`
 `ultimate-sms/api` is mandatory on your install url
 
 ```php
