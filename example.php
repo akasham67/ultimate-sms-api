@@ -32,7 +32,7 @@ $from = '8801721000000';
 // Step 4: the number we are sending to - Any phone number
 $destination = '8801810000000';
 
-// Step 5: Replace https://ultimatesms.coderpixel.com/demo/ to your Install URL like https://mywebhost.com/ultimate-sms/api
+// Step 5: Replace your Install URL like https://mywebhost.com/ultimate-sms/api with https://ultimatesms.coderpixel.com/demo/
 // <ultimate-sms/api> is mandatory.
 
 $url = 'https://ultimatesms.coderpixel.com/demo/ultimate-sms/api';
@@ -41,7 +41,7 @@ $url = 'https://ultimatesms.coderpixel.com/demo/ultimate-sms/api';
 $sms = 'test message from Ultimate SMS';
 
 
-// Final sending request for a simple sms
+// Create SMS Body for request
 $sms_body = array(
     'api_key' => $api_key,
     'to' => $destination,
@@ -54,6 +54,9 @@ $client = new UltimateSMSAPI();
 
 // Step 7: Send SMS
 $response = $client->send_sms($sms_body, $url);
+
+print_r($response);
+
 
 // Step 8: Get Response
 $response=json_decode($response);
