@@ -4,6 +4,12 @@
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Abul Kashem Shamim",
+            "email": "akasham67@gmail.com"
+        }
+    ],
     "require": {
         "php": ">=5.3.0"
     }
