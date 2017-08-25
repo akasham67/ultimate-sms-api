@@ -1,9 +1,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/shamim/ultimate-sms-api/v/stable)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
 [![Total Downloads](https://poser.pugx.org/shamim/ultimate-sms-api/downloads)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
-[![Latest Unstable Version](https://poser.pugx.org/shamim/ultimate-sms-api/v/unstable)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
 [![License](https://poser.pugx.org/shamim/ultimate-sms-api/license)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
-[![Monthly Downloads](https://poser.pugx.org/shamim/ultimate-sms-api/d/monthly)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
 [![GitHub issues](https://img.shields.io/github/issues/akasham67/ultimate-sms-api.svg?style=flat-square)](https://github.com/akasham67/ultimate-sms-api/issues)
 [![GitHub stars](https://img.shields.io/github/stars/akasham67/ultimate-sms-api.svg?style=flat-square)](https://github.com/akasham67/ultimate-sms-api/stargazers)
 
@@ -17,7 +15,7 @@ Ultimate SMS API is build for Ultimate SMS - Bulk SMS Application For Marketing
 To run Ultimate SMS API you have to install Ultimate SMS Application on your server. 
 For more details please visit: [Ultimate SMS](https://ultimatesms.coderpixel.com/)
 ```
-php >=5.3
+php >=5.6
 Ultimate SMS - Bulk SMS Application For Markting
 ```
 
@@ -37,9 +35,14 @@ git clone https://github.com/akasham67/ultimate-sms-api.git
 
 
  ### Step 1:
-Load your Ultimate SMS API Class file and Use namespace. 
+If install Ultimate SMS API using Git Clone then load your Ultimate SMS API Class file and Use namespace. 
 ```php
 require_once 'src/Class_Ultimate_SMS_API.php';
+use UltimateSMS\UltimateSMSAPI;
+```
+If install Ultimate SMS API using Composer then Require/Include autoload.php file in the index.php of your project or whatever file you need to use **Ultimate SMS API** classes:. 
+```php
+require 'vendor/autoload.php';
 use UltimateSMS\UltimateSMSAPI;
 ```
 ### Step 2:
@@ -58,6 +61,7 @@ the number we are sending to - Any phone number
 ```php
 $destination = '8801810000000';
 ```
+You have to must include Country code at beginning of the phone number.  
 
 ### Step 5:
 Replace your Install URL like `https://mywebhost.com/ultimate-sms/api` with `https://ultimatesms.coderpixel.com/demo/`
@@ -113,14 +117,11 @@ Ultimate SMS API return response with `json` format, like:
 | `101` | Wrong action |
 | `102` | Authentication failed |
 | `103` | Invalid phone number |
+| `104` | Phone coverage not active |
+| `105` | Insufficient balance |
 
 ## Authors
 
 * **Abul Kashem Shamim** - *Initial work* - [akasham67](https://github.com/akasham67)
 
 See also the list of [contributors](https://github.com/akasham67/ultimate-sms-api/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
