@@ -21,7 +21,7 @@ require_once 'src/Class_Ultimate_SMS_API.php';
 use UltimateSMS\UltimateSMSAPI;
 
 
-// Step 2: set your API_KEY from https://mywebhost.com/ultimate-sms-api/info
+// Step 2: set your API_KEY from https://mywebhost.com/sms-api/info
 
 $api_key = 'YWRtaW46YWRtaW4ucGFzc3dvcmQ=';
 
@@ -32,10 +32,10 @@ $from = '8801721000000';
 // Step 4: the number we are sending to - Any phone number
 $destination = '8801810000000';
 
-// Step 5: Replace your Install URL like https://mywebhost.com/ultimate-sms/api with https://ultimatesms.coderpixel.com/demo/
-// <ultimate-sms/api> is mandatory.
+// Step 5: Replace your Install URL like https://mywebhost.com/sms/api with https://ultimatesms.coderpixel.com/demo/
+// <sms/api> is mandatory.
 
-$url = 'https://ultimatesms.coderpixel.com/demo/ultimate-sms/api';
+$url = 'https://ultimatesms.coderpixel.com/demo/sms/api';
 
 // the sms body
 $sms = 'test message from Ultimate SMS';
@@ -67,4 +67,8 @@ echo 'Message: '.$response->message;
 
 //Step 9: Get your inbox
 $get_inbox=$client->get_inbox($api_key,$url);
+
+//Step 10: Get your account balance
+
+$check_balance=$client->check_balance($api_key,$url);
 

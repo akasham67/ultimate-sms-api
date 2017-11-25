@@ -1,6 +1,5 @@
 
 [![Latest Stable Version](https://poser.pugx.org/shamim/ultimate-sms-api/v/stable)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
-[![Total Downloads](https://poser.pugx.org/shamim/ultimate-sms-api/downloads)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
 [![License](https://poser.pugx.org/shamim/ultimate-sms-api/license)](https://packagist.org/packages/shamim/ultimate-sms-api?format=flat-square)
 [![GitHub issues](https://img.shields.io/github/issues/akasham67/ultimate-sms-api.svg?style=flat-square)](https://github.com/akasham67/ultimate-sms-api/issues)
 [![GitHub stars](https://img.shields.io/github/stars/akasham67/ultimate-sms-api.svg?style=flat-square)](https://github.com/akasham67/ultimate-sms-api/stargazers)
@@ -46,7 +45,7 @@ require 'vendor/autoload.php';
 use UltimateSMS\UltimateSMSAPI;
 ```
 ### Step 2:
-set your API_KEY from `https://mywebhost.com/ultimate-sms-api/info` (your application install url)
+set your API_KEY from `https://mywebhost.com/sms-api/info` (your application install url)
 ```php
 $api_key = 'YWRtaW46YWRtaW4ucGFzc3dvcmQ=';
 ```
@@ -64,11 +63,11 @@ $destination = '8801810000000';
 You have to must include Country code at beginning of the phone number.  
 
 ### Step 5:
-Replace your Install URL like `https://mywebhost.com/ultimate-sms/api` with `https://ultimatesms.coderpixel.com/demo/`
-`ultimate-sms/api` is mandatory on your install url
+Replace your Install URL like `https://mywebhost.com/sms/api` with `https://ultimatesms.coderpixel.com/demo/`
+`sms/api` is mandatory on your install url
 
 ```php
-$url = 'https://ultimatesms.coderpixel.com/demo/ultimate-sms/api';
+$url = 'https://ultimatesms.coderpixel.com/demo/sms/api';
 ```
 // SMS Body
 ```php
@@ -101,6 +100,12 @@ Get your all message
 ```php
 $get_inbox=$client->get_inbox($api_key,$url);
 ```
+
+## Get Balance
+Get your account balance
+```php
+$get_balance=$client->check_balance($api_key,$url);
+```
 ## Response
 Ultimate SMS API return response with `json` format, like:
 
@@ -123,5 +128,3 @@ Ultimate SMS API return response with `json` format, like:
 ## Authors
 
 * **Abul Kashem Shamim** - *Initial work* - [akasham67](https://github.com/akasham67)
-
-See also the list of [contributors](https://github.com/akasham67/ultimate-sms-api/contributors) who participated in this project.

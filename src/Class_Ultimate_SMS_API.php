@@ -95,5 +95,24 @@ class UltimateSMSAPI
 
     }
 
+    /**
+     * @param $api_key
+     * @param $url
+     * @return mixed
+     *
+     * Get Balance for specific user
+     *
+     */
+
+    public function check_balance($api_key,$url){
+        $post_body='action=check-balance&api_key='.$api_key;
+
+        $response=$this->send_server_response($url,$post_body);
+
+        return $response;
+
+
+    }
+
 
 }
