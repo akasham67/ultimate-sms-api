@@ -40,6 +40,10 @@ $url = 'https://ultimatesms.coderpixel.com/demo/sms/api';
 // the sms body
 $sms = 'test message from Ultimate SMS';
 
+// unicode sms
+$unicode = 0; //For Plain Message
+$unicode = 1; //For Unicode Message
+
 
 // Create SMS Body for request
 $sms_body = array(
@@ -47,6 +51,7 @@ $sms_body = array(
     'to' => $destination,
     'from' => $from,
     'sms' => $sms,
+    'unicode' => $unicode,
 );
 
 // Step 6: instantiate a new Ultimate SMS API request

@@ -73,6 +73,11 @@ $url = 'https://ultimatesms.coderpixel.com/demo/sms/api';
 ```php
 $sms = 'test message from Ultimate SMS';
 ```
+// Unicode SMS
+```php
+$unicode = '0'; //For plain message
+$unicode = '1'; //For Unicode message
+```
 // Create SMS Body for request
 ```php
 $sms_body = array(
@@ -80,6 +85,7 @@ $sms_body = array(
     'to' => $destination,
     'from' => $from,
     'sms' => $sms,
+    'unicode' => $unicode,
 );
 ```
 
@@ -124,6 +130,7 @@ Ultimate SMS API return response with `json` format, like:
 | `103` | Invalid phone number |
 | `104` | Phone coverage not active |
 | `105` | Insufficient balance |
+| `106` | Invalid Sender ID |
 
 ## Authors
 
