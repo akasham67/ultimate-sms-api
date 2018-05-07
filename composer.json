@@ -3,7 +3,7 @@
   "description": "Ultimate SMS API is build for Ultimate SMS - Bulk SMS Application For Marketing",
   "type": "library",
   "license": "MIT",
-  "version": "2.3",
+  "version": "2.3.0",
   "minimum-stability": "stable",
   "authors": [
     {
