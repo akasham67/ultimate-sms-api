@@ -60,6 +60,12 @@ the number we are sending to - Any phone number
 ```php
 $destination = '8801810000000';
 ```
+For multiple number please use Comma (,) after every single number.
+```php
+$destination = '8801810000000,8801721000000,880167000000,01913000000';
+```
+You can insert maximum 100 numbers using comma in single api request.
+
 You have to must include Country code at beginning of the phone number.  
 
 ### Step 5:
