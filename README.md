@@ -160,7 +160,7 @@ Finally send your sms through Ultimate SMS API
 $response = $client->send_sms($sms_body, $url);
 ```
 
-## Get Inbox
+## Get Delivery Reports
 Get your all message
 ```php
 $get_inbox=$client->get_inbox($api_key,$url);
